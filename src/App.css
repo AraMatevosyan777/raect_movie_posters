@@ -44,8 +44,7 @@
   width: 23%;
   margin: 0 10px 20px 10px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }
 .poster h3{
   width: 100%;
@@ -56,6 +55,9 @@
 .poster img{
   width: 100%;
   height: 400px;
+}
+.poster p{
+  text-align: center;
 }
 .paginator{
   display: flex;

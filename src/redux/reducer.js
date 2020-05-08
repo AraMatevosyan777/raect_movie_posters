@@ -5,10 +5,12 @@ const SET_ERROR_MESSAGE = 'SET_ERROR_MESSAGE';
 const SET_TOTAL_POSTERS_COUNT = 'SET_TOTAL_POSTERS_COUNT';
 const SET_PAGE = 'SET_PAGE';
 const SET_VALUE = 'SET_VALUE';
+const SET_MOVIE_POSTER = 'SET_MOVIE_POSTER';
 
 let initialState = {
     value: "America",
     posters: [],
+    moviePoster:[],
     loading: false,
     error: '',
     searchValue: '',
@@ -22,6 +24,11 @@ export const reducer = (state=initialState, action) => {
             return{
                 ...state,
                 posters: action.payload
+            };
+        case SET_MOVIE_POSTER:
+            return{
+                ...state,
+                moviePoster: action.data
             };
         case LOADING:
             return{
@@ -60,6 +67,7 @@ const setPage= (page) => ({type: SET_PAGE, page})
 const loading = (load) => ({type: LOADING, load})
 const setErrorMessage = (error) => ({type: SET_ERROR_MESSAGE, error})
 export const setSearchValue = (value) => ({type: SET_VALUE, value})
+const setMoviePoster = (data) => ({type: SET_MOVIE_POSTER, data})
 
 export const getPosters = (page, value) => async(dispatch) => {
     dispatch(loading(true));
@@ -74,5 +82,12 @@ export const getPosters = (page, value) => async(dispatch) => {
         dispatch(setTotalPostersCount(0))
         dispatch(setErrorMessage(response.data.Error))
     }
+    dispatch(loading(false));
+}
+export const getMoviePoster = (title) => async(dispatch) => {
+    dispatch(loading(true));
+    let response = await axios.get(`https://www.omdbapi.com/?apikey=2d49a8ef&t=${title}`);
+    let data = response.data
+    dispatch(setMoviePoster(data))
     dispatch(loading(false));
 }

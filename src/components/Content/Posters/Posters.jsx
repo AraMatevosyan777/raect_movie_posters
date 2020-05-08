@@ -5,7 +5,7 @@ import Poster from './Poster';
 const Posters = (props) => {
     return(
         <div className="posters">
-            {props.posters.map(poster => <Poster poster={poster}/>)}
+            {props.posters.map(poster => <Poster poster={poster} getMoviePoster={props.getMoviePoster}/>)}
         </div>
     )
 }
