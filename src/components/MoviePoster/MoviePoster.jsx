@@ -1,12 +1,13 @@
 import React from 'react';
 import './MoviePoster.css';
+import movie_poster from './../../assets/img/movie_img.png';
 
 const MoviePoster = (props) => {
     return(
         <div className='moviePage'>
             <div className='movieTitle'><h3>{props.moviePoster.Title}</h3></div>
             <div className='moviePoster'>
-                <img src={props.moviePoster.Poster}/>
+                <img src={props.moviePoster.Poster === "N/A"? movie_poster :props.moviePoster.Poster}/>
             </div>
             <div className='aboutMovie'>
                 <div className="movieItem">
