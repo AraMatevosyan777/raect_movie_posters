@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/raect_movie_posters/precache-manifest.842bb87fe32d2924d615483421f1efb1.js"
+  "/raect_movie_posters/precache-manifest.2b355cfe52931fdbd507fdc4ee0b6200.js"
 );
 
 self.addEventListener('message', (event) => {
