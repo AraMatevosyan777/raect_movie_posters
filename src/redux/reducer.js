@@ -46,7 +46,8 @@ export const reducer = (state=initialState, action) => {
         case SET_VALUE:
             return{
                 ...state,
-                value: action.value
+                value: action.value,
+                page: 1
             };
             default:
                 return state;
@@ -63,7 +64,7 @@ export const setSearchValue = (value) => ({type: SET_VALUE, value})
 export const getPosters = (page, value) => async(dispatch) => {
     dispatch(loading(true));
     dispatch(setPage(page))
-    let response = await axios.get(`http://omdbapi.com/?apikey=2d49a8ef&s=${value}&page=${page}`);
+    let response = await axios.get(`https://www.omdbapi.com/?apikey=2d49a8ef&s=${value}&page=${page}`);
     if(response.data.Response === "True"){
     dispatch(setErrorMessage(''))
     dispatch(setTotalPostersCount(response.data.totalResults))
