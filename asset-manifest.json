@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/raect_movie_posters/static/css/main.46fff7c5.chunk.css",
-    "main.js": "/raect_movie_posters/static/js/main.1a7b14d3.chunk.js",
-    "main.js.map": "/raect_movie_posters/static/js/main.1a7b14d3.chunk.js.map",
+    "main.js": "/raect_movie_posters/static/js/main.8a4a3db8.chunk.js",
+    "main.js.map": "/raect_movie_posters/static/js/main.8a4a3db8.chunk.js.map",
     "runtime-main.js": "/raect_movie_posters/static/js/runtime-main.eafd6413.js",
     "runtime-main.js.map": "/raect_movie_posters/static/js/runtime-main.eafd6413.js.map",
-    "static/js/2.01892da3.chunk.js": "/raect_movie_posters/static/js/2.01892da3.chunk.js",
-    "static/js/2.01892da3.chunk.js.map": "/raect_movie_posters/static/js/2.01892da3.chunk.js.map",
+    "static/js/2.3b2e018d.chunk.js": "/raect_movie_posters/static/js/2.3b2e018d.chunk.js",
+    "static/js/2.3b2e018d.chunk.js.map": "/raect_movie_posters/static/js/2.3b2e018d.chunk.js.map",
     "index.html": "/raect_movie_posters/index.html",
-    "precache-manifest.246ea502e38c3014d20b54830ec213ef.js": "/raect_movie_posters/precache-manifest.246ea502e38c3014d20b54830ec213ef.js",
+    "precache-manifest.842bb87fe32d2924d615483421f1efb1.js": "/raect_movie_posters/precache-manifest.842bb87fe32d2924d615483421f1efb1.js",
     "service-worker.js": "/raect_movie_posters/service-worker.js",
     "static/css/main.46fff7c5.chunk.css.map": "/raect_movie_posters/static/css/main.46fff7c5.chunk.css.map",
-    "static/js/2.01892da3.chunk.js.LICENSE.txt": "/raect_movie_posters/static/js/2.01892da3.chunk.js.LICENSE.txt",
+    "static/js/2.3b2e018d.chunk.js.LICENSE.txt": "/raect_movie_posters/static/js/2.3b2e018d.chunk.js.LICENSE.txt",
     "static/media/loader.svg": "/raect_movie_posters/static/media/loader.4a5d9951.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.eafd6413.js",
-    "static/js/2.01892da3.chunk.js",
+    "static/js/2.3b2e018d.chunk.js",
     "static/css/main.46fff7c5.chunk.css",
-    "static/js/main.1a7b14d3.chunk.js"
+    "static/js/main.8a4a3db8.chunk.js"
   ]
 }
